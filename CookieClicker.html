@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookieClicker</title>
+    <link rel="stylesheet" href="CookieClickerStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <header>
+
+     
+
+       
+        <div id="SideBar">
+            <div id="CloseSidebar" onclick="CloseSidesbar('SideBar')"><span class="closeBtn" >&#10005;</span></div>  
+
+            <div class="Rewards">
+                <div class="Reward" onclick="Reward(1)">
+                <h1>Reward 1000 Cookies</h1>
+                <p class="Color1">Blueness</p>
+                </div>
+
+                <div class="Reward" onclick="Reward(2)">
+                    <h1>Reward 10.000 Cookies</h1>
+                    <p class="Color2">Greeness</p>
+                    </div>
+
+                    <div class="Reward" onclick="Reward(3)"  >
+                        <h1>Reward 15.000 Cookies</h1>
+                        <p class="Color3">Redness</p>
+                        </div>
+
+                        <div class="Reward" onclick="Reward(4)">
+                            <h1>Reward 50.000 Cookies</h1>
+                            <p class="Color4">Pinkness</p>
+                            </div>
+
+
+                            <div class="Reward" onclick="Reward(5)">
+                                <h1>Reward 100.000 Cookies</h1>
+                                <p class="Color5">Brownness</p>
+                                </div>
+
+
+                                <div class="Reward" onclick="Reward(6)">
+                                    <h1>Reward 1.000.000 Cookies</h1>
+                                    <span class="red">R</span>
+                                    <span class="Orange">A</span>
+                                    <span class="yellow">I</span>
+                                    <span class="green">N</span>
+                                    <span class="blue">B</span>
+                                    <span class="Indigo">O</span>
+                                    <span class="Violet">W</span>
+                        
+                                    
+                                    </div>
+
+            </div>
+
+        </div>
+
+        
+            
+            
+       
+        <div class="OpenShopBtn-position">
+            <div id="Position-Sidebar-opener">
+                <button id="OpenSidebarbtn"  onclick="OpenSidebar('SideBar')" ><span  id="Reward-fa">&#x2630;</span></button> 
+            </div>
+            <button onclick="OpenShop('CookieShop')" id="OpenButton"><span><i style="font-size:24px" class="fa">&#xf07a;</i></span></button>
+            
+        </div> 
+
+
+        <div id="CookieShop">
+            <div class="CookieShop-Design">
+                <h1 class="Shop-headline">Cookie Shop</h1>
+    
+                <div class="closeBtn-positon" onclick="CloseShop('CookieShop')"><span class="closeBtn">&#10005;</span></div>
+
+                <div class="Shop-Buttons">
+                    <!-- SBtn1 heißt Shop Button 1 -->
+                    <Button class="Shop-button SBtn1" id="boughtSbtn1">1C/5sek Lieferung</Button>
+                    <Button class="Shop-button SBtn2" id="boughtSbtn2">5C/3sek Lieferung</Button>
+                    <Button class="Shop-button SBtn3" id="boughtSbtn3">1C/1sek Lieferung</Button>
+                    <Button class="Shop-button SBtn4" >Suprise Box</Button>
+                </div>
+    
+                <div class="Shop-Costs">
+                    <p class="Shop-cost">200 Cookies</p>
+                    <p class="Shop-cost">410 Cookies</p>
+                    <p class="Shop-cost">625 Cookies</p>
+                    <p class="Shop-cost" id="SupriseBoxMoney">120 Cookies</p>
+                </div>
+
+                <div>
+                    <p id="RewardWarung">Bei Suprise Boxen werden keine Cookies als Reward Cookies Gesammelt!!!</p>
+                </div>
+    
+    
+            </div>
+    
+        
+        </div>
+
+      
+    </header>
+   
+
+   <main>
+
+    <div class="CookieCounter-Position">
+        <h2>Cookies: </h2> 
+        <div id="CookieCounter"></div>
+    </div>
+
+    <div class="Cookie-img-position">
+    <img src="img/Cookie.png" alt="" onclick="Cookie()" width="360px" class="Cookie-img" >
+    </div>
+
+    <div class="Update-Buttons">
+        <Button onclick="Neighborsfactory()" class="Update-btn">neighbors factory <div  id="neighborsfactoryRush"></div></Button>
+        <Button onclick="UpdateClicker()" class="Update-btn">Update Clicker <div id="UpdateClickerMoney"></div></Button>
+        <Button onclick="GrandmaSuprises()" class="Update-btn">Grandmas Suprise <div  id="GrandmasSurpise"></div></Button>
+    </div>
+
+    </main>
+
+   
+
+
+
+    <script src="CookieClickerfunc.js"></script>
+</body>
+</html>
